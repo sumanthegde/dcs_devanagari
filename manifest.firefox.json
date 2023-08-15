@@ -15,7 +15,7 @@
     "matches": ["*://*.sanskrit-linguistics.org/*", "*://sanskrit-linguistics.org/*"]
   } ],
   "icons": {
-      "48": "d48.png"
+      "96": "d96.png"
   },
   "browser_specific_settings.gecko.id": "CBE99DA0-574B-4519-B254-D7E22A9845D2"
 }
