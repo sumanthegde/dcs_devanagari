@@ -1,5 +1,5 @@
 chrome:
-pwd === dcs 
+pwd === dcs_devanagari
 root/manifest.json
   version++
   ensure chrome (manifest v3, service_worker)

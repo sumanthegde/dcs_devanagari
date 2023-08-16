@@ -4,7 +4,6 @@ function textReplace(classNames) {
     var elements = document.querySelectorAll("." + className);
     console.log("className: " , className, elements.length);
     elements.forEach(function(element) {
-      console.log("HERE: ", element.className);
       // Loop through child nodes and apply translit to text nodes
       Array.from(element.childNodes).forEach(function(node) {
         if(node.nodeType === Node.TEXT_NODE 
