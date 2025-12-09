@@ -1,20 +1,32 @@
 {
   "name": "dcs in devanagari",
-  "version": "1.0.1",
-  "manifest_version": 3,
+  "version": "1.0.2",
+  "manifest_version": 2,
   "description": "Devanagari interface for dcs",
   "permissions": [
-      "webNavigation"
+    "webNavigation"
   ],
   "background": {
-      "service_worker": "js/background.js",
-      "type": "module"
+    "type": "module",
+    "scripts": [
+      "js/background.js"
+    ]
   },
-  "content_scripts": [ {
-    "js": ["js/sanscript.js", "js/submiteasy.js", "js/vieweasy.js"],
-    "matches": ["*://*.sanskrit-linguistics.org/*", "*://sanskrit-linguistics.org/*"]
-  } ],
+  "content_scripts": [
+    {
+      "js": [
+        "js/sanscript.js",
+        "js/submiteasy.js",
+        "js/vieweasy.js"
+      ],
+      "matches": [
+        "*://*.sanskrit-linguistics.org/*",
+        "*://sanskrit-linguistics.org/*"
+      ]
+    }
+  ],
   "icons": {
-      "48": "d48.png"
+    "48": "d48.png",
+    "96": "d96.png"
   }
 }
